@@ -1,4 +1,4 @@
-name: 'Dependabot vulerabilities notification to Slack'
+name: 'Slack'
 
 on:
   schedule:
