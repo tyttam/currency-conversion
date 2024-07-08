@@ -21,3 +21,4 @@ jobs:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           slack_webhook: ${{ secrets.SLACK_WEBHOOK2 }}
           severity: medium,high,critical
+          count: 1
