@@ -15,6 +15,7 @@ jobs:
     steps:
       - name: install dependencies
         run: |
+          cd app
           composer install
       - name: Send custom JSON data to Slack workflow
         id: slack
