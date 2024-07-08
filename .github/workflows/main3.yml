@@ -7,13 +7,15 @@ on:
   workflow_dispatch:
 
 jobs:
-
-  Notify-Vulnerabilites:
-
+  test:
+    name: test with build
+    
     runs-on: ubuntu-latest
 
     steps:
-
+      - name: install dependencies
+        run: |
+          composer install
       - name: Send custom JSON data to Slack workflow
         id: slack
         uses: slackapi/slack-github-action@v1.26.0
