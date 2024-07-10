@@ -22,4 +22,4 @@ jobs:
           slack_webhook: ${{ secrets.SLACK_WEBHOOK2 }}
           severity: medium,high,critical
           count: 30
-          ecosystem: Composer
+          ecosystem: npm
